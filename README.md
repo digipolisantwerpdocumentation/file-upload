@@ -1,6 +1,23 @@
 # Upload van files
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Inhoudstabel
+
+- [Upload van files](#upload-van-files)
+  - [Upload in 1 stap (as-is)](#upload-in-1-stap-as-is)
+  - [Upload in 2 stappen](#upload-in-2-stappen)
+  - [2-step upload](#2-step-upload)
+    - [Stap 1: Uploaden metadata](#stap-1-uploaden-metadata)
+    - [Stap 2: Upload binaire files kleiner dan 2mb](#stap-2-upload-binaire-files-kleiner-dan-2mb)
+    - [Stap 2: Upload binaire files groter dan 2mb](#stap-2-upload-binaire-files-groter-dan-2mb)
+  - [Referenties](#referenties)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Inleiding
 Dit document is een technische richtlijn en beschrijft hoe toekomstige services file uploads  moeten implementeren op een RESTful manier. 
 In dit document is een onderscheid gemaakt tussen twee types van files. Files  kleiner dan 2 mb en files van 2 mb tot 1 GB. Files groter dan 1 GB zijn voorlopig buiten scope. 
+
 ## Upload in 1 stap (as-is)
 Momenteel worden files in veel applicaties (digitale kluis, DAMs,...) geüpload in 1 single call. De file zit of base64 encoded of als multipart in de payload met metadata die verzonden wordt. Dit heeft een aantal voor- en nadelen:
 **Voordelen:**
