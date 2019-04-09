@@ -175,6 +175,6 @@ HTTP Streaming      |                  | X
 - YouTube resumable upload API: https://developers.google.com/youtube/v3/guides/using_resumable_upload_protocol 
 - OneDrive large file upload: https://docs.microsoft.com/en-us/onedrive/developer/rest-api/api/driveitem_createuploadsession
 - Http Range Requests: https://tools.ietf.org/html/rfc7233 
-Multipart: https://www.ietf.org/rfc/rfc2388.txt
+- Multipart: https://www.ietf.org/rfc/rfc2388.txt
 
 
