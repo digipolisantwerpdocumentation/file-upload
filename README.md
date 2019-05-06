@@ -16,7 +16,7 @@
 
 ## Inleiding
 Dit document is een technische richtlijn en beschrijft hoe toekomstige services file uploads  moeten implementeren op een RESTful manier. 
-In dit document is een onderscheid gemaakt tussen twee types van files. Files  kleiner dan 2 mb en files van 2 mb tot ∞ GB.
+In dit document is een onderscheid gemaakt tussen twee types van files. Files  kleiner dan 2 mb en files vanaf 2 mb.
 
 ## Upload in 1 stap (as-is)
 Momenteel worden files in veel applicaties (digitale kluis, DAMs,...) geüpload in 1 single call. De file zit of base64 encoded of als multipart in de payload met metadata die verzonden wordt. Dit heeft een aantal voor- en nadelen:<br/>
